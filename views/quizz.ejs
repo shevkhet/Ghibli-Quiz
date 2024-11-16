@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+<div class="quizz-component">
+    <div class="question-counter">
+        <div>QUESTION <%= qCounter %>/7</div>
+    </div>
+    <div class="container question-box">
+        <div class="row">
+            <div class="col h-100 rounded-3 clue">
+                <p class="fw-bold fs-5">
+                    <%= qDescription %>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 answerOne">
+                <form action="/submit" method="POST">
+                <input type ="submit" name = "answerTOP" class="btn btn-light w-100 custom-btn text-start" 
+                value= "<%= (order === 0) ? answer1 : answer2 %>" formaction="/answer1">
+                </form>
+            </div>
+            <div class="col-12 answerTwo mt-2">
+                <form action="/submit" method="POST">
+                <input type ="submit" name = "answerBTM" class="btn btn-light w-100 custom-btn text-start" 
+                value= "<%= (order === 0) ? answer2 : answer1 %>" formaction="/answer2">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

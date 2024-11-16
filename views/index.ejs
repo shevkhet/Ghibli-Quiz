@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+                <div class="col-12">
+                    <p class="lead text-center">
+                    Think you know Studio Ghibli inside and out? <br>
+                    In this challenge, we’ll describe scenes and stories from 10 iconic Ghibli films. Your task is to guess the title! <br> 
+                    Step into the magic, test your memory, and see if you can name each masterpiece from just a few clues.
+                    </p>
+                </div>   
+            </div>         
+        </div>
+        <form action="/submit" method="POST">
+            <input type="submit" id="quizz" class="btn btn-dark btn-lg px-4 gap-3 btn-begin" value="Let's begin" formaction="/quizz">
+        </form>
+    </div>
+</div>
+</body>
+</html>
