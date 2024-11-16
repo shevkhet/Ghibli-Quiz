@@ -12,7 +12,9 @@ To launch the application, proceed as follows :
 Here is the website you should access : 
 ![image](https://github.com/user-attachments/assets/4b41ece6-f5ed-4dda-a394-8b694307671e)
 
-It consists in creating a 7 questions quiz, where the user will be invited to guess a Ghibli film title based on its description. 
-The Ghibli's data are picked up from the Studio Ghibli public API available at this url : https://ghibliapi.vercel.app.
+It consists of creating a 7-questions quiz, where the user is invited to guess a Ghibli film title based on its description. 
+The Ghibli's data is retrieved from the Studio Ghibli public API available at this url : https://ghibliapi.vercel.app.
 
-There is no authentification necessary, and the API is free access. 
+No authentification is necessary, and the API is freely accesssible. 
+
+The JavaScript file index.js is fully commented to describe the logic of the program.
